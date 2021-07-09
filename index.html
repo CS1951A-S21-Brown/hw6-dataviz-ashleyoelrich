@@ -13,10 +13,29 @@
         <h3>Assignment 6 &laquo; Data Visualization Dashboard &raquo;</h3>
     </div>
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
+
     <div class="row">
+        <div class="buttons">
+            <button type="button" class="btn btn-info" onclick="setYear(0,'All')">All Years</button>
+            <button type="button" class="btn btn-info" onclick="setYear(1,'2006')">2006 Only</button>
+        </div>
         <div class="col-lg-6">
             <div id="graph1"></div>
-            <div id="graph2"></div><br/>
+            <div id="graph2"></div>
+            <div id="scatterplot"></div><br/>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-info" onclick="setGenre('Sports')">Sports</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Platform')">Platform</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Racing')">Racing</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Role-Playing')">Role-Playing</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Puzzle')">Puzzle</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Misc')">Misc</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Shooter')">Shooter</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Action')">Action</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Fighting')">Fighting</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Simulation')">Simulation</button>
+            <button type="button" class="btn btn-info" onclick="setGenre('Adventure')">Adventure</button>
         </div>
         <div class="col-lg-6">
             <div id="graph3"></div>
